@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Widget from './Widget';
+import WidgetTags from './WidgetTags';
 
 const HomeSidebar = () => {
   return (
-    <div>HomeSidebar</div>
+    <aside className='right-sidebar'>
+      <Widget />
+      <WidgetTags />
+
+    </aside>
   )
 }
 
