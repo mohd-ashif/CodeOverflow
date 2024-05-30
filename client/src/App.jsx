@@ -1,7 +1,7 @@
 
 
 import {BrowserRouter as Router } from 'react-router-dom'
-import "./App.css"
+// import "./App.css"
 import Navbar from './components/Navbar'
 import AllRoutes from './AllRoutes'
 

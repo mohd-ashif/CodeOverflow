@@ -2,10 +2,10 @@ import React from 'react'
 import LeftSidebar from '../../components/LeftSidebar'
 import HomeMainbar from '../../components/HomeMainbar'
 import RightSidebar from '../../components/RightSidebar'
-import "../../App.css"
 
 
-const Home = () => {
+
+const Questions = () => {
   return (
     <div className="home-container-1">
       <LeftSidebar />
@@ -17,4 +17,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Questions
