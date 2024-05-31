@@ -8,18 +8,24 @@ const HomeMainbar = () => {
 
   const user = 1
 
-  const questionsList = [
-    {
-      id: 1,
-      votes: 3,
-      noOfAnswers: 2,
-      questionTitle: 'What is a function?',
-      questionBody: 'It meant to be',
-      questionTags: ['java', 'node js', 'react js', 'mongodb'],
-      userPosted: 'mano',
-      time: 'jan 1',
-    },
-    {
+  var questionsList = [{
+    _id: 1,
+    upVotes: 3,
+    downVotes: 2,
+    no0fAnswers: 2,
+    questionTitle: "What is a function?",
+    questionBody: "It meant to be",
+    questionTags: ["java", "node js", "react js", "mongodb"],
+    userPosted: "mano",
+    userId: 1,
+    askedon: "jan 1",
+    answer: [{
+    answerBody: "Answer",
+    userAnswered: 'kumar',
+    answeredOn: "jan 2",
+    userId: 2,
+    }]
+    },{
       id: 2,
       votes: 0,
       noOfAnswers: 0,
@@ -27,7 +33,14 @@ const HomeMainbar = () => {
       questionBody: 'It meant to be',
       questionTags: ['javascript', 'R', 'python'],
       userPosted: 'mano',
-      time: 'jan 1',
+       userId: 1,
+      askedon: "jan 1",
+      answer: [{
+      answerBody: "Answer",
+      userAnswered: 'kumar',
+      answeredOn: "jan 2",
+      userId: 2,
+      }]
     },
     {
       id: 3,
@@ -37,7 +50,14 @@ const HomeMainbar = () => {
       questionBody: 'It meant to be',
       questionTags: ['javascript', 'R', 'python'],
       userPosted: 'mano',
-      time: 'jan 1',
+      userId: 1,
+      askedon: "jan 1",
+      answer: [{
+      answerBody: "Answer",
+      userAnswered: 'kumar',
+      answeredOn: "jan 2",
+      userId: 2,
+      }]
     },
   ];
 
