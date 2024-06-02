@@ -1,5 +1,6 @@
 import express from'express'
-import { AskQuestion } from '../controllers/Askquestion.js'
+import { AskQuestion, getAllQuestions } from '../controllers/Askquestion.js'
+
 
 
 
@@ -7,6 +8,8 @@ const router = express.Router()
 
 
 router.post('/Ask',  AskQuestion)
+router.get('/get', getAllQuestions);
+
 
 
 
