@@ -29,13 +29,14 @@ const DisplayAnswer = ({ question , handleShare}) => {
               <button type="button" onClick={handleShare} >
                 Share
               </button>
-              {
-  User && User.result && User.result._id === question?.userId && (
-    <button className='edit-question-btn' type='button' onClick={ () => handleDelete (ans._id, question.noOfAnswers)  }>
-      delete
-    </button>
-  )
-}
+              {User?.result?._id === ans?.userId && (
+                <button
+                  type="button"
+                  onClick={() => handleDelete(ans._id, question.noOfAnswers)}
+                >
+                  Delete
+                </button>
+              )}
             </div>
             <div >
              

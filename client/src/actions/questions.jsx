@@ -1,7 +1,6 @@
 import React from "react";
 import * as api from '../api'
 
-
 export const AskQuestion = (questionData, navigate)=>  async (dispatch) =>  {
 
       try {
@@ -14,9 +13,7 @@ export const AskQuestion = (questionData, navigate)=>  async (dispatch) =>  {
         console.log(error);
         
       }
-
 }
-
 
 export const fetchAllQuestions = () => async (dispatch) => {
   try {
@@ -26,7 +23,15 @@ export const fetchAllQuestions = () => async (dispatch) => {
     console.log(error);
   }
 };
-
+  
+export const voteQuestion = (id, value) => async (dispatch) => {
+  try {
+  const {data } = await api.voteQuestion(id, value);
+    dispatch(fetchAllQuestions());
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 export const postAnswer = (answerData) => async (dispatch) => {
   try {

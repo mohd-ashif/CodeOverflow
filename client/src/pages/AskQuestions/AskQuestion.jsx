@@ -39,7 +39,7 @@ const Askquestion = () => {
                         <h4>Title </h4>
                         <p>Be specify and imagine you are asking a question to another person </p>
                         <input type="text"  name='questionTitle' id='ask-quest-title' onChange={(e)=> {setQestionTitle(e.target.value)}}/>
-                    </label>
+                    </label>    
 
                     <label htmlFor=""className='ask-ques-body'>
                         <h4>Body </h4>

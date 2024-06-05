@@ -1,5 +1,7 @@
 import express from'express'
-import { AskQuestion, getAllQuestions  , deleteQuestion} from '../controllers/questions.js'
+import { AskQuestion, getAllQuestions  , deleteQuestion, voteQuestion} from '../controllers/questions.js'
+import auth from '../middleware/auth.js';
+
 
 
 
@@ -7,9 +9,10 @@ import { AskQuestion, getAllQuestions  , deleteQuestion} from '../controllers/qu
 const router = express.Router()
 
 
-router.post('/Ask',  AskQuestion)
-router.get('/get', getAllQuestions);
-router.delete('/delete/:id' , deleteQuestion)
+router.post('/Ask',auth,  AskQuestion)
+router.get('/get' , getAllQuestions);
+router.delete('/delete/:id' ,auth ,  deleteQuestion)
+router.patch('/vote/:id' ,auth ,  voteQuestion)
 
 
 
